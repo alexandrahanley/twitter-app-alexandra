@@ -1,0 +1,14 @@
+<% @tweet_fetch.alexandra_tweets.each do |alexandra_tweet| %>
+<%= alexandra_tweet.text %>
+<% end %>
+
+<h3>Recent user Tweets</h3>
+
+<%= form_tag '/', method: :get %>
+<%= label_tag ("username") %>
+<%= text_field_tag (:user_name) %>
+<%= submit_tag %>
+
+<% @others_tweets.each do |tweet| %>
+<%= tweet.text %>
+<% end %>

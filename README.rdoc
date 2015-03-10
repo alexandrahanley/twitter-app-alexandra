@@ -1,28 +1,12 @@
 == README
+- A textfield to look up a user's tweets.
+- A text field and form to create a tweet. (From your account)
+- Homepage is list of tweets from people the authenticated user follows or
+  tweets of the user looked up.
+- Follow a user through a text field.
+- Fetch a list of a users followers through a text box.
+- Button that fetches tweets that mention your username.
+- Fetch the three most recent tweets to Obama that say "Thanks Obama".
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+params(:username) in form
+call a method in Tweetfetcher to
